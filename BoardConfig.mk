@@ -65,6 +65,9 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 DEVICE_MANIFEST_FILE := device/moto/shamu_t/manifest.xml
 DEVICE_MATRIX_FILE := device/moto/shamu_t/compatibility_matrix.xml
 
+EXCLUDE_SERIF_FONTS := true
+
+
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
