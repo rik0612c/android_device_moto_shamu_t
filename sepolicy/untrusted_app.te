@@ -1,2 +1,4 @@
 # Google Hotword Detection
 allow untrusted_app adspd_data_file:dir search;
+# shamu
+dontaudit untrusted_app proc:file r_file_perms;
