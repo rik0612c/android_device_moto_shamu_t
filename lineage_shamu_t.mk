@@ -26,7 +26,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/moto/shamu_t/device.mk)
-$(call inherit-product-if-exists, vendor/motorola/shamu_t/shamu-vendor.mk)
+
+# Inherit proprietary files
+$(call inherit-product, vendor/motorola/shamu_t/shamu-vendor.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_shamu_t
@@ -35,8 +37,11 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto X Pro
 PRODUCT_MANUFACTURER := motorola
 
+<<<<<<< HEAD:lineage_shamu_t.mk
 TARGET_VENDOR := motorola
 
+=======
+>>>>>>> 153d8ef4 (shamu: lineage_shamu: Cleanup):lineage_shamu.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu_t \
     PRIVATE_BUILD_DESC="shamu-user 7.1.1 N6F27M 4299435 release-keys"
