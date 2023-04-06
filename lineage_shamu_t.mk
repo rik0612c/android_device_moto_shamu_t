@@ -37,11 +37,6 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto X Pro
 PRODUCT_MANUFACTURER := motorola
 
-<<<<<<< HEAD:lineage_shamu_t.mk
-TARGET_VENDOR := motorola
-
-=======
->>>>>>> 153d8ef4 (shamu: lineage_shamu: Cleanup):lineage_shamu.mk
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu_t \
     PRIVATE_BUILD_DESC="shamu-user 7.1.1 N6F27M 4299435 release-keys"
